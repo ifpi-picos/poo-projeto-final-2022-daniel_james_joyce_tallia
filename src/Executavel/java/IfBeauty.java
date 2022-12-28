@@ -1,9 +1,6 @@
 package Executavel.java;
 
-import Classes.java.Cliente;
-import Classes.java.Endereco;
-import Classes.java.Funcionario;
-import Classes.java.Servicos;
+import Classes.java.*;
 
 import javax.swing.*;
 import java.time.LocalDate;
@@ -15,12 +12,8 @@ public class IfBeauty {
     static ArrayList<Servicos> servicos;
     public static void main(String[] args) {
     servicos = new ArrayList<>();
-        // URL de conexão com o banco de dados
-        String url = "xxxxxxxx";
-        String username = "nome_usuario";
-        String password = "senha";
         // Tentativa de conexão com o bd
-        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+        try (Connection connection = SalaoDBManager.obterConexao()) {
             // Criação de uma consulta
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM tabela");
