@@ -8,13 +8,31 @@ import Classes.java.Servicos;
 import javax.swing.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
-
+import java.sql.*;
 import static javax.swing.JOptionPane.*;
 
 public class IfBeauty {
     static ArrayList<Servicos> servicos;
     public static void main(String[] args) {
     servicos = new ArrayList<>();
+        // URL de conexão com o banco de dados
+        String url = "xxxxxxxx";
+        String username = "nome_usuario";
+        String password = "senha";
+        // Tentativa de conexão com o bd
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            // Criação de uma consulta
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM tabela");
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                System.out.println(id + ": " + name);
+            }
+        } catch (SQLException e) {
+            // Tratamento de exceções
+            e.printStackTrace();
+        }
     int comandoInteiro = 0;
     while (comandoInteiro != 5){
         opcoesServicos();
