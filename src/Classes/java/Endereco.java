@@ -2,52 +2,57 @@ package Classes.java;
 
 public class Endereco {
     private String logradouro;
-    private int numeroEndereco;
+    private String numero;
     private String bairro;
     private String cidade;
     private String uf;
 
-    public String getLogradouro() {
-        return logradouro;
-    }
-
-    public void setLogradouro(String logradouro) {
+    public Endereco(String logradouro, String numero, String bairro, String cidade, String uf){
         this.logradouro = logradouro;
-    }
-
-    public int getNumeroEndereco() {
-        return numeroEndereco;
-    }
-
-    public void setNumeroEndereco(int numeroEndereco) {
-        this.numeroEndereco = numeroEndereco;
-    }
-
-    public String getBairro() {
-        return bairro;
+        this.numero = numero;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.uf = uf;
     }
 
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
 
-    public String getCidade() {
-        return cidade;
-    }
-
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
 
-    public String getUf() {
-        return uf;
+    public String getCidade() {
+        return cidade;
     }
 
     public void setUf(String uf) {
         this.uf = uf;
     }
 
-    public Endereco() {
+    public String getUf() {
+        return uf;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String getLogradouro() {
+        return logradouro;
     }
 }
 
