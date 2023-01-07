@@ -23,11 +23,8 @@ public class Servicos {
     }
 
     public void remover(Servicos servico, int codigo ) {
-        if(servico.getNome().equalsIgnoreCase(nome)) {
-
-            /* TEM ERRO AQUI NA PARTE DE REMOVER
-            servicos.remove(servico);*/
-
+        if(servico.getCodigo() == codigo) {
+            servico.remover(servico, codigo);
         }
         else {
             JOptionPane.showMessageDialog(null, "Não foi possível remover serviço");

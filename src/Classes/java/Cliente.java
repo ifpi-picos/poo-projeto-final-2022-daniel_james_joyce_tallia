@@ -53,16 +53,10 @@ public class Cliente {
 
     public void removerClientes(Cliente cliente, int codigo){
         if(cliente.getCodigo() == codigo){
-
-            /*
-
-            TEM ERRO AQUI NESSA PARTE DE REMOVER
-
-            clientes.remove(cliente);*/
-            System.out.println(" Cliente removido com sucesso");
+            cliente.removerClientes(cliente, codigo);
         }
         else {
-            System.out.println(" Não foi possivel remover o cliente");
+            JOptionPane.showMessageDialog(null, "Não foi possível remover cliente!");
         }
     }
     public void setEndereco(Endereco endereco) {
@@ -100,11 +94,11 @@ public class Cliente {
             cliente.setNome(nome);
             cliente.setEmail(email);
             cliente.setSexo(sexo);
-            cliente.setEnderecoNumero(numero);
-            cliente.setEnderecoBairro(bairro);
-            cliente.setEnderecoCidade(cidade);
             cliente.setEnderecoUf(uf);
+            cliente.setEnderecoCidade(cidade);
+            cliente.setEnderecoBairro(bairro);
             cliente.setEnderecoLogradouro(logradouro);
+            cliente.setEnderecoNumero(numero);
         }
         else{
             JOptionPane.showMessageDialog(null, "Não foi possivel alterar cliente!");

@@ -4,12 +4,7 @@
     <list default="true" id="76ca7d07-fefe-47ca-86b2-ba03b807a1de" name="Changes" comment="conexão">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/java/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/java/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/java/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/java/SalaoDBManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/java/Servicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Servicos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/java/ServicosDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Executavel/java/IfBeauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Executavel/java/IfBeauty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
