@@ -1,7 +1,8 @@
 package Executavel.java;
 
 import Classes.java.*;
-
+import static Classes.java.Servicos.*;
+import static Classes.java.Cliente.*;
 import javax.swing.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -192,7 +193,7 @@ public class IfBeauty {
         int codigo = Integer.parseInt(codigoString);
         Servicos servico = encontraServicos(codigo);
         if(servico != null) {
-            servico.remover(servico, codigo);
+            servicos.remove(servico);
         }
     }
     public static void removerCliente() {
@@ -200,7 +201,7 @@ public class IfBeauty {
         int codigo = Integer.parseInt(codigoString);
         Cliente cliente = encontrarClientes(codigo);
         if(cliente != null){
-            cliente.removerClientes(cliente, codigo);
+            clientes.remove(cliente);
         }
     }
     private static void sair(){

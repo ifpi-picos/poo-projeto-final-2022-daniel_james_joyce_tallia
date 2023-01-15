@@ -27,6 +27,7 @@ public class Endereco {
         return cidade;
     }
 
+
     public void setUf(String uf) {
         this.uf = uf;
     }

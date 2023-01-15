@@ -1,5 +1,6 @@
 package Classes.java;
-
+import static Classes.java.Cliente.*;
+import static Executavel.java.IfBeauty.alterarCliente;
 import javax.swing.*;
 
 public class Cliente {
@@ -69,7 +70,7 @@ public class Cliente {
         this.endereco.setBairro(nome);
     }
     public void setEnderecoCidade(String cidade){
-        this.endereco.setBairro(cidade);
+        this.endereco.setCidade(cidade);
     }
     public String getSexo() {
         return sexo;

@@ -4,7 +4,8 @@
     <list default="true" id="76ca7d07-fefe-47ca-86b2-ba03b807a1de" name="Changes" comment="conexão">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/java/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/java/Servicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Servicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/java/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/java/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Executavel/java/IfBeauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Executavel/java/IfBeauty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/james/Downloads/teste-java-main&quot;
   }
 }</component>
   <component name="RecentsManager">
