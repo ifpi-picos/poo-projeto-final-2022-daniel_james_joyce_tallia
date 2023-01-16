@@ -2,17 +2,20 @@ package Classes.java;
 
 public class Endereco {
     private String logradouro;
-    private String numero;
+    private int numero;
     private String bairro;
     private String cidade;
     private String uf;
+    private String rua;
 
-    public Endereco(String logradouro, String numero, String bairro, String cidade, String uf){
-        this.logradouro = logradouro;
+
+    public Endereco( int numero, String bairro, String cidade,String rua, String uf){
         this.numero = numero;
         this.bairro = bairro;
         this.cidade = cidade;
         this.uf = uf;
+        this.rua = rua;
+
     }
 
     public void setBairro(String bairro) {
@@ -27,6 +30,13 @@ public class Endereco {
         return cidade;
     }
 
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public String getRua() {
+        return rua;
+    }
 
     public void setUf(String uf) {
         this.uf = uf;
@@ -36,7 +46,7 @@ public class Endereco {
         return uf;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
@@ -48,7 +58,7 @@ public class Endereco {
         this.logradouro = logradouro;
     }
 
-    public String getNumero() {
+    public int getNumero() {
         return numero;
     }
 
@@ -56,4 +66,3 @@ public class Endereco {
         return logradouro;
     }
 }
-
